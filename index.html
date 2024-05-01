@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!--Header Start-->
+    <h1 id="title">Star Wars Survey</h1>
+     <div class="container">
+      <div class="marker red">
+        <div class="cap"></div>
+        <div class="sleeve"></div>
+      </div>
+    <p id="description">Fill out this survey to join the Jedi</p>
+    <!--Header End-->
+    <!--Survey Start-->
+    <form id="survey-form">
+    <fieldset>
+      <label for="name" id="name-label">Name 
+        <input type="text" id="name" name="name-info" placeholder="Enter Rank ---> Ex. Padawan" required>
+      </label>
+      <label for="email" id="email-label">Email 
+        <input type="email" id="email" name="email-info" placeholder="Enter Your Email" required>
+      </label>
+      <label for="number" id="number-label">Age
+        <input type="number" id="number" name="age-info" placeholder="Years spent on Tatooine" min="6" max="25" required>
+      </label>
+      <label>Preferred Master?
+        <select id="dropdown" required>
+          <option value="">Select One</option>
+          <option value="1">Yoda</option>
+          <option value="2">Obi-wan Kenobi</option>
+          <option value="3">Luke Skywalker</option>
+          <option value="4">Leia Organa</option>
+        </select>
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>Are You Force Sensitive?</legend>
+      <label for="yes-button"><input type="radio" id="yes-button" name="radio" class="same-line" value="5" checked>Yes</label>
+      <label for="no-button"><input type="radio" id="no-button" name="radio" class="same-line" value="6">No</label>
+      <label for="unsure-button"><input type="radio" id="unsure-button" name="radio" class="same-line" value="7">Unsure
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>Race</legend>
+      <label for="human-button">
+        <input type="checkbox" id="human-button" name="checkbox" class="same-line" value="7"> Human
+      </label>
+      <label for="ewok-button">
+        <input type="checkbox" id="ewok-button" name="checkbox" class="same-line" value="8"> Ewok
+      </label>
+      <label for="wookie-button">
+        <input type="checkbox" id="wookie-button" name="checkbox" class="same-line" value="9"> Wookie
+      </label>
+      <label for="mon-calamari-button">
+        <input type="checkbox" id="mon-calamari-button" name="checkbox" class="same-line" value="10"> Mon Calamari
+      </label>
+    </fieldset>
+    <fieldset>
+      <label for="bio">Explain why you would be a good jedi?
+      </label>
+      <textarea id="bio" name="bio" class="bio" rows="3" cols="30" placeholder="I would be a good jedi because..."></textarea>
+    </fieldset>
+      <input type="submit" id="submit" value="Submit" class="submit-button">
+    </form>
+    <!--Survey End-->
+  </body>
+  <html>
